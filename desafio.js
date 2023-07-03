@@ -2,8 +2,8 @@ const mensagemSecreta = [
   "Aprender",
   "não",
   "é",
-  "sobre",
   "o",
+  "sobre",
   "que",
   "você",
   "consegue",
@@ -31,8 +31,9 @@ mensagemSecreta.splice(8, 1, "certo");
 mensagemSecreta.shift();
 mensagemSecreta.unshift("Programação");
 mensagemSecreta.splice(7, 5, "sabe");
-
-//console.log(mensagemSecreta.indexOf("certo"));
+mensagemSecreta.splice(8, 1, "é");
+mensagemSecreta.splice(3, 1, "sobre");
+mensagemSecreta.splice(4, 1, "o");
 
 console.log(mensagemSecreta.join(" "));
 
