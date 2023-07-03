@@ -1,6 +1,9 @@
 // 1)
 const ordenarNumeros = [25, 23, 11, 55, 30, 6, 4, 21, 34, 89, 56];
-ordenarNumeros.sort(); // [11, 21, 23, 25, 30, 34, 4, 55, 56, 6, 89]
+// ordenarNumeros.sort(); -> [11, 21, 23, 25, 30, 34, 4, 55, 56, 6, 89]
+ordenarNumeros.sort((a, b) => {
+  return a - b;
+});
 console.log(ordenarNumeros);
 // Observe que 34 vem antes do 4,
 // porque '34' vem antes de '4' em ponto de código Unicode.
